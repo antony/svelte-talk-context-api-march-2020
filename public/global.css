@@ -55,13 +55,14 @@ h1 {
 }
 
 h3 {
-  font-size: 4rem;
+  font-size: 2.25rem;
+  margin: 0;
 }
 
 h4 {
   font-family: 'Lobster';
-  font-size: 2.25rem;
-  margin: 3rem 0;
+  font-size: 5rem;
+  margin: 1rem 0;
 
   text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.5);
 }
@@ -128,7 +129,7 @@ pre > .component-name {
   display: block;
   width: 100%;
   font-weight: 700;
-  font-size: 0.6rem;
+  font-size: 1rem;
   color: lightskyblue;
   text-align: right;
 }
@@ -139,7 +140,7 @@ pre > .component-name {
 }
 
 .columns > div {
-  max-width: 42%;
+  width: 42%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

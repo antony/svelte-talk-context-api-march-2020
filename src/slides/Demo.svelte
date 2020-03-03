@@ -88,8 +88,8 @@
 
   .child h1 {
     font-size: 4vh;
-    height: 100%;
-    padding-top: 150%;
+    height: 50%;
+    padding-top: 50%;
     color: #FB0048;
   }
 </style>
