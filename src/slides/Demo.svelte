@@ -68,7 +68,7 @@
 
   .hierarchy {
     box-sizing: border-box;
-    padding: 4vh 4vw;
+    padding: 4% 4%;
     width: 100%;
     height: 100%;
     display: flex;

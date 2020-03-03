@@ -21,13 +21,13 @@
       </ul>
     </li>
   </ul>
-
-  <ul class="notes">
-    <li>Built Widget for Beyonk - lots of controls and subcomponents</li>
-    <li>Maps - All sorts of optional pieces</li>
-    <li>Marker might move map</li>
-    <li>Search recentres map</li>
-    <li>Routes might highlight markers</li>
-    <li>Multiple maps</li>
-  </ul>
 </div>
+
+<ul class="notes">
+  <li>Built Widget for Beyonk - lots of controls and subcomponents</li>
+  <li>Maps - All sorts of optional pieces</li>
+  <li>Marker might move map</li>
+  <li>Search recentres map</li>
+  <li>Routes might highlight markers</li>
+  <li>Multiple maps</li>
+</ul>

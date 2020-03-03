@@ -1,52 +1,53 @@
-<svelte:window on:keydown={e => handleKeydown(e.code) } />
+<ShowController />
 
-<div bind:this={slideshow} class="slideshow">
-  <svelte:component this={order[currentIndex]}></svelte:component>
-  <span class="pagination">
-    {currentIndex + 1} / {order.length}
-  </span>
+{#if $store.full}
+<Slideshow bind:this={slideshow} />
+{:else}
+<div class="speaker">
+  <div class="deck pane">
+    <Slideshow bind:this={slideshow} />
+  </div>
+  <div class="note pane">
+    <Notes />
+  </div>
 </div>
+{/if}
 
 <script>
-  import Welcome from './slides/Welcome.svelte'
-  import What from './slides/What.svelte'
-  import Why from './slides/Why.svelte'
-  import How from './slides/How.svelte'
-  import Keys from './slides/Keys.svelte'
-  import UseCases from './slides/UseCases.svelte'
-  import Implementation from './slides/Implementation.svelte'
-  import Demo from './slides/Demo.svelte'
-  import Thankyou from './slides/Thankyou.svelte'
-  
-  const order = [
-    Welcome,
-    What,
-    Why,
-    How,
-    Keys,
-    UseCases,
-    Implementation,
-    Demo,
-    Thankyou
-  ]
+  import { setContext, onDestroy } from 'svelte'
+  import { writable } from 'svelte/store'
+  import key from './key.js'
+  import slides from './slides/slides.js'
+
+  import ShowController from './ShowController.svelte'
+  import Slideshow from './Slideshow.svelte'
+  import Notes from './Notes.svelte'
+
+  const store = writable({
+    full: true,
+    index: 0,
+    slides
+  })
+
+  setContext(key, store)
 
   let slideshow
-  let currentIndex = 0
 
-  function handleKeydown (code) {
-    const keys = {
-      ArrowLeft: previous,
-      ArrowRight: next
-    }
-
-    keys[code] && keys[code]()
-  }
-
-  function next () {
-    currentIndex = currentIndex >= order.length - 1 ? currentIndex : currentIndex + 1
-  }
-
-  function previous () {
-    currentIndex = currentIndex < 1 ? currentIndex : currentIndex - 1
-  }
 </script>
+
+<style>
+  .speaker {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .pane {
+    display: flex;
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  .deck {
+  }
+</style>

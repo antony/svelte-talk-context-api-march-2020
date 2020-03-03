@@ -12,12 +12,11 @@
   <blockquote>
     * You can only put things into the context at component initialisation
   </blockquote>
-
-
-  <ul class="notes">
-    <li>You can add a hash full of data, functions, or just primitives</li>
-    <li>Put data into the context, in the parent</li>
-    <li>Get data from the context, in the children</li>
-    <li>Only put things into context during its creation</li>
-  </ul>
 </div>
+
+<ul class="notes">
+  <li>You can add a hash full of data, functions, or just primitives</li>
+  <li>Put data into the context, in the parent</li>
+  <li>Get data from the context, in the children</li>
+  <li>Only put things into context during its creation</li>
+</ul>

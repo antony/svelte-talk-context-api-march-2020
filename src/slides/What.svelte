@@ -7,11 +7,11 @@
     <li>No passing props or binding stuff</li>
     <li>Bound to a parent</li>
   </ul>
-
-  <ul class="notes">
-    <li>Shared state</li>
-    <li>Only needs a key</li>
-    <li>Five components deep</li>
-    <li>All children within context</li>
-  </ul>
 </div>
+
+<ul class="notes">
+  <li>Shared state</li>
+  <li>Only needs a key</li>
+  <li>Five components deep</li>
+  <li>All children within context</li>
+</ul>
