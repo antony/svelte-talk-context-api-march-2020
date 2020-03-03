@@ -43,7 +43,7 @@
   }
 
   function next () {
-    currentIndex = currentIndex > order.length - 1 ? currentIndex : currentIndex + 1
+    currentIndex = currentIndex >= order.length - 1 ? currentIndex : currentIndex + 1
   }
 
   function previous () {

@@ -34,7 +34,6 @@ body {
 }
 
 .title {
-  text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.5);
   justify-content: center;
   align-items: center;
 }
@@ -57,6 +56,8 @@ h4 {
   font-family: 'Lobster';
   font-size: 6vh;
   margin: 1vh 0;
+
+  text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.5);
 }
 
 ul {
@@ -65,6 +66,8 @@ ul {
 
 ul li {
   margin: 1vh 0;
+
+  text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.5);
 }
 
 .slideshow .notes { 
@@ -72,17 +75,37 @@ ul li {
 }
 
 .slideshow .slide {
-  color: #303030;
   padding: 4vh 4vw;
-  text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.5);
 }
 
-.slide.alt1 {
+.alt0 {
+  background-color: #FB0048;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
+}
+
+.alt1 {
   background-color: #13E708;
+  color: #303030;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
 }
 
-.slide.alt2 {
+.alt2 {
   background-color: #FFC300;
+  color: #303030;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
+}
+
+.alt3 {
+  color: #fff;
+  background-color: #4d4dff;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 1);
+}
+
+.alt4 {
+  color: #303030;
+  background-color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 pre {
@@ -90,5 +113,35 @@ pre {
   text-align: center;
   background-color: #303030;
   color: #fff;
-  padding: 4vh 0;
+  border: 25px solid #303030;
+  border-top: 4px;
+  margin: 1vh 0;
+}
+
+pre > .component-name {
+  display: block;
+  width: 100%;
+  font-weight: 700;
+  font-size: 2vh;
+  color: lightskyblue;
+  text-align: right;
+}
+
+.columns {
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.columns > div {
+  max-width: 42vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a,
+a:visited,
+a:hover {
+  font-family: Catamaran;
+  color: #fff;
 }

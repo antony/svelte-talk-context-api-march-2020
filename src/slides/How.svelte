@@ -1,13 +1,15 @@
-<div class="slide">
+<div class="slide alt4">
   <h4>How?</h4>
 
   <h5>Entire API in two methods:</h5>
 
   <pre>
+    <span class="component-name">Ancestor.svelte</span>
     set(key, 'some data')
   </pre>
 
   <pre>
+    <span class="component-name">Descendent.svelte</span>
     get(key)
   </pre>
 

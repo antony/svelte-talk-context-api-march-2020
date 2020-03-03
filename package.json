@@ -4,14 +4,19 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^11.0.0",
     "@rollup/plugin-node-resolve": "^7.1.1",
+    "@sveltejs/svelte-repl": "^0.1.17",
     "cross-env": "^6.0.3",
     "nollup": "^0.10.6",
+    "postcss": "^7.0.27",
+    "postcss-load-config": "^2.1.0",
     "rollup": "^1.31.1",
     "rollup-plugin-hot": "^0.0.13",
     "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-postcss": "^2.1.1",
     "rollup-plugin-svelte-hot": "^0.4.0",
     "rollup-plugin-terser": "^5.1.2",
-    "svelte": "~3.19.0"
+    "svelte": "~3.19.0",
+    "svelte-preprocess": "^3.4.0"
   },
   "dependencies": {
     "sirv-cli": "^0.4.4"

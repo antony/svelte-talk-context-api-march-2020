@@ -1,4 +1,4 @@
-<div class="slide alt1">
+<div class="slide alt2">
   <h4>Context Key</h4>
 
   <blockquote>
@@ -11,6 +11,7 @@
   </ul>
 
   <pre>
+    <span class="component-name">Object Equality</span>
     &#123;&#125; !== &#123;&#125;
   </pre>
 

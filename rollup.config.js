@@ -2,8 +2,10 @@ import svelte from 'rollup-plugin-svelte-hot'
 import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 import livereload from 'rollup-plugin-livereload'
+import preprocess from 'svelte-preprocess'
 import { terser } from 'rollup-plugin-terser'
 import hmr, { autoCreate } from 'rollup-plugin-hot'
+import postcss from 'rollup-plugin-postcss'
 
 // Set this to true to pass the --single flag to sirv (this serves your
 // index.html for any unmatched route, which is a requirement for SPA
@@ -59,6 +61,7 @@ export default {
         //
         // https://github.com/rixo/rollup-plugin-svelte-hot#usage
       },
+      preprocess: preprocess()
     }),
 
     // If you have external dependencies installed from
@@ -71,6 +74,7 @@ export default {
       // rollup-plugin-svelte-hot automatically resolves & dedup svelte
     }),
     commonjs(),
+    postcss(),
 
     // In dev mode, call `npm run start:dev` once
     // the bundle has been generated

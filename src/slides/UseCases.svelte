@@ -1,9 +1,9 @@
-<div class="slide alt1">
+<div class="slide alt3">
   <h4>Use Cases</h4>
 
   <ul>
     <li>Widget with shared components</li>
-    <li>A Map - as per the Svelte Tutorial:/li>
+    <li>A Map - as per the Svelte Tutorial</li>
     <li>
       <ul>
         <li>Markers are hard to pass props to</li>
