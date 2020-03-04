@@ -33,7 +33,7 @@ export default {
     sourcemap: true,
     format: 'iife',
     name: 'app',
-    file: 'public/build/bundle.js',
+    file: 'docs/build/bundle.js',
   },
   plugins: [
     svelte({
@@ -44,7 +44,7 @@ export default {
       // NOTE extracting CSS doesn't work with HMR, so we're inlining when hot
       ...(!hot && {
         css: css => {
-          css.write('public/build/bundle.css')
+          css.write('docs/build/bundle.css')
         },
       }),
       hot: hot && {
@@ -78,7 +78,7 @@ export default {
 
     // Watch the `public` directory and refresh the
     // browser on changes when not in production
-    useLiveReload && livereload('public'),
+    useLiveReload && livereload('docs'),
 
     // If we're building for production (npm run build
     // instead of npm run dev), minify
@@ -96,7 +96,7 @@ export default {
       }),
 
     hmr({
-      public: 'public',
+      public: 'docs',
       inMemory: true,
       // This is needed, otherwise Terser (in npm run build) chokes
       // on import.meta. With this option, the plugin will replace
